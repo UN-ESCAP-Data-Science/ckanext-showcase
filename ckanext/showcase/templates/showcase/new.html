@@ -1,0 +1,26 @@
+{% extends "showcase/edit_base.html" %}
+
+{% block subtitle %}{{ _('Create Project') }}{% endblock %}
+
+{% block primary_content %}
+  <section class="module">
+    <div class="module-content">
+      <h1 class="{% block page_heading_class %}page-heading{% endblock %}">{% block page_heading %}{{ _('Create a Project') }}{% endblock %}</h1>
+        <p><small>Please fill out this data entry form adhering to the guidelines set out in the SDG Data Hub Curation
+            Handbook. The Description section in particular should follow the specified format using markdown headings.
+            The SDG Data Hub Curation Handbook can be found <a href="#">here</a></small></p>
+        {% block primary_content_inner %}
+        {% block form %}
+          {#- passing c to a snippet is bad but is required here
+              for backwards compatibility with old templates and
+              plugins using setup_template_variables() -#}
+          {{- h.snippet(form_snippet, c=c, **form_vars) -}}
+        {% endblock %}
+      {% endblock %}
+    </div>
+  </section>
+{% endblock %}
+
+{% block secondary_content %}
+  {{ h.snippet('showcase/snippets/helper.html') }}
+{% endblock %}
