@@ -1,23 +1,13 @@
-.. You should enable this project on travis-ci.org and coveralls.io to make
-   these badges work. The necessary Travis and Coverage config files have been
-   generated for you.
-
-.. image:: https://travis-ci.org/ckan/ckanext-showcase.svg?branch=master
-    :target: https://travis-ci.org/ckan/ckanext-showcase
-
-.. image:: https://coveralls.io/repos/ckan/ckanext-showcase/badge.svg
-  :target: https://coveralls.io/r/ckan/ckanext-showcase
-
 ================
 ckanext-showcase
 ================
 
-**This is a customizations to add display filters to Showcase to distinguish
-types of datasets to highlight ones marked as Notebooks (Jupyter or Zepplin).
+**This contains customizations to add display filters to the Showcase plugin to distinguish
+types of datasets to highlight ones marked as Notebooks (Jupyter or Zeppelin).
 We also rename Showcase to Project as per the nomenclature we wish to use for
-the SDG Data Hub.
+the SDG Data Hub.**
 
-Showcase and link to datasets in use. Datasets used in an app, website or
+Showcase and link to datasets in use as Projects. Datasets used in an app, website or
 visualization, or featured in an article, report or blog post can be showcased
 within the CKAN website. Showcases can include an image, description, tags and
 external link. Showcases may contain several datasets, helping users discover
@@ -30,11 +20,9 @@ create, populate and maintain showcases.
 ckanext-showcase is intended to be a more powerful replacement for the
 'Related Item' feature.
 
-
 ------------
 Requirements
 ------------
-
 
 Compatible with CKAN 2.3+.
 
